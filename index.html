@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kolker+Brush&family=Licorice&family=Pacifico&family=Roboto:wght@100&family=The+Nautigal&display=swap'">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sassy+Frass&family=Shadows+Into+Light&family=Yuji+Mai&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            
+            section {
+                margin: auto;
+            }
+            
+            article {
+                padding: 10px;
+                background: whitesmoke;
+            }
+            
+            header {
+                width: 50vw;
+                margin: auto;
+            }
+            
+            div {
+                margin: auto;
+                width: fit-content;
+            }
+            
+            * {
+                font-family: Roboto;
+                font-weight: 900;
+            }
+            
+            h1 {
+                font-family: Yuji Mai;
+            }
+            
+            input {
+                padding: 5px;
+                width: 200px;
+                border: 1px solid black;
+            }
+            
+            input:focus {
+                outline: 3px solid rgba(0, 68, 255, 0.301);
+                border: 1px solid rgb(0, 68, 255);
+            }
+            
+            button {
+                padding: 5px;
+                background: white;
+                border: 1px solid black;
+            }
+            
+            button:hover {
+                border: 1px solid rgb(0, 68, 255);
+                color: rgb(0, 68, 255);
+                cursor: pointer;
+            }
+            
+            label {
+                padding: 0 50px;
+            }
+            
+            @media (max-width: 540px) {
+                div {
+                    margin-left: -30px;
+                }
+            }
+            
+            @media (max-width: 437px) {
+                label {
+                    display: block;
+                    padding: 20px;
+                }
+                div {
+                    margin-left: 30px;
+                }
+            }
+            
+            @media (max-width: 323px) {
+                button {
+                    display: block;
+                    margin-left: 60px;
+                }
+                label {
+                    margin-left: 45px;
+                }
+            }
+            
+            #answer1,
+            #answer2 {
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- <h1 translate="no">AceriWeb</h1> -->
+        </header>
+        <section>
+            <!-- <h2>Continúa la secuencia</h2> -->
+            <article> <br>
+                <div class="cuestionario">
+                    <label for="text1">U, D, T, C, C, C, T, O:</label>
+                    <input type="search" id="text1" placeholder="Escribe tu respuesta.."> &nbsp; <button id="boton">Verificar</button>
+                    <br>
+                </div>
+                <br>
+                <p id="answer1"></p>
+                <p id="answer2"></p>
+            </article>
+        </section>
+
+        <script>
+            var _0x4143 = ["\x61\x6E\x73\x77\x65\x72\x31", "\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64", "\x61\x6E\x73\x77\x65\x72\x32", "\x74\x65\x78\x74\x31", "\x62\x74\x6E\x2D\x63\x6C\x65\x61\x72", "\x63\x6C\x69\x63\x6B", "\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72", "\x77\x69\x64\x74\x68", "\x73\x74\x79\x6C\x65", "\x63\x6F\x6C\x6F\x72", "\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64", "\x70\x61\x64\x64\x69\x6E\x67", "\x62\x6F\x72\x64\x65\x72", "\x74\x65\x78\x74\x41\x6C\x69\x67\x6E", "\x74\x72\x69\x6D", "\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65", "\x76\x61\x6C\x75\x65", "\x4E", "\x32\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x72\x65\x64", "\x72\x65\x64", "\x57\x68\x69\x73\x70\x65\x72\x20\x69\x6E\x20\x6D\x79\x20\x65\x61\x72\x2C\x20\x62\x61\x62\x79", "\x63\x72\x65\x61\x74\x65\x54\x65\x78\x74\x4E\x6F\x64\x65", "\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64", "\x62\x6F\x64\x79", "\x33\x31\x30\x70\x78", "\x23\x32\x32\x32", "\x6C\x69\x67\x68\x74\x67\x72\x65\x65\x6E", "\x31\x30\x70\x78", "\x33\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x67\x72\x61\x79", "\x63\x65\x6E\x74\x65\x72", "\x49\x6E\x63\x6F\x72\x72\x65\x63\x74\x6F\x20", "\x31\x35\x30\x70\x78", "\x23\x64\x64\x64", "\x4C\x61\x73\x20\x63\x6F\x72\x72\x65\x63\x61\x73\x20\x73\x6F\x6E\x20\x3A\x20", "\x6C\x6F\x67", "\x4C\x61\x73\x20\x69\x6E\x63\x6F\x72\x72\x65\x63\x74\x61\x73\x20\x73\x6F\x6E\x3A\x20", "", "\x31\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x72\x67\x62\x61\x28\x30\x2C\x20\x30\x2C\x20\x30\x2C\x20\x30\x2E\x35\x29", "\x62\x6C\x61\x63\x6B", "\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C"];
+            var item1 = document[_0x4143[1]](_0x4143[0]);
+            var item2 = document[_0x4143[1]](_0x4143[2]);
+            var request1 = document[_0x4143[1]](_0x4143[3]);
+            var clear = document[_0x4143[1]](_0x4143[4]);
+            var sumaC = 0,
+                sumaI = 0;
+            var first_item = false,
+                second_item = false;
+            boton[_0x4143[6]](_0x4143[5], sendAnswer);
+            clear[_0x4143[6]](_0x4143[5], clearAnswer);
+
+            function addStyle(_0x6572xa, _0x6572xb, _0x6572xc, _0x6572xd, _0x6572xe, _0x6572xf, _0x6572x10) {
+                _0x6572xa[_0x4143[8]][_0x4143[7]] = _0x6572xb;
+                _0x6572xa[_0x4143[8]][_0x4143[9]] = _0x6572xc;
+                _0x6572xa[_0x4143[8]][_0x4143[10]] = _0x6572xd;
+                _0x6572xa[_0x4143[8]][_0x4143[11]] = _0x6572xe;
+                _0x6572xa[_0x4143[8]][_0x4143[12]] = _0x6572xf;
+                _0x6572xa[_0x4143[8]][_0x4143[13]] = _0x6572x10
+            }
+
+            function sendAnswer() {
+                var _0x6572x12 = request1[_0x4143[16]][_0x4143[15]]()[_0x4143[14]]();
+                if (_0x6572x12 === _0x4143[17]) {
+                    sumaC += 1;
+                    first_item = true
+                } else {
+                    sumaI += 1;
+                    second_item = true;
+                    request1[_0x4143[8]][_0x4143[12]] = _0x4143[18];
+                    request1[_0x4143[8]][_0x4143[9]] = _0x4143[19]
+                };
+                if (first_item === true) {
+                    var _0x6572x13 = document[_0x4143[1]](_0x4143[0]);
+                    var _0x6572x14 = document[_0x4143[21]](_0x4143[20]);
+                    _0x6572x13[_0x4143[22]](_0x6572x14);
+                    document[_0x4143[23]][_0x4143[22]](_0x6572x13);
+                    addStyle(_0x6572x13, _0x4143[24], _0x4143[25], _0x4143[26], _0x4143[27], _0x4143[28], _0x4143[29])
+                };
+                if (second_item === true) {
+                    var _0x6572x15 = document[_0x4143[1]](_0x4143[2]);
+                    var _0x6572x16 = document[_0x4143[21]](_0x4143[30]);
+                    _0x6572x15[_0x4143[22]](_0x6572x16);
+                    document[_0x4143[23]][_0x4143[22]](_0x6572x15);
+                    addStyle(_0x6572x15, _0x4143[31], _0x4143[32], _0x4143[19], _0x4143[27], _0x4143[28], _0x4143[29])
+                };
+                console[_0x4143[34]](_0x4143[33] + sumaC);
+                console[_0x4143[34]](_0x4143[35] + sumaI);
+                sumaC = 0;
+                sumaI = 0
+            }
+
+            function clearAnswer() {
+                request1[_0x4143[16]] = _0x4143[36];
+                request1[_0x4143[8]][_0x4143[12]] = _0x4143[37];
+                request1[_0x4143[8]][_0x4143[9]] = _0x4143[38];
+                item1[_0x4143[39]] = _0x4143[36];
+                item2[_0x4143[39]] = _0x4143[36]
+            }
+        </script>
+
+
+
+    </body>
+
+    </html>
+</body>
+
+</html>
